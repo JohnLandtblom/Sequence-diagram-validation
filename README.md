@@ -5,12 +5,6 @@
 sequenceDiagram
   participant Client
   participant Server
-  participant Client
-  participant Server
-  participant Client
-  participant Server
-  participant Client
-  participant Server
   Client->>Server: Send to Server
   Note over Client: Post req. login (email/Pw)
   Server-->>Client: Send to Client
