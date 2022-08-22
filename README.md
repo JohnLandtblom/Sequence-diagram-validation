@@ -1,6 +1,6 @@
 
 #Sequencediagram user access wiht JWT token
-##Mermaid
+
 ``` mermaid
 sequenceDiagram
   participant Client
@@ -9,14 +9,20 @@ sequenceDiagram
   Note over Client: Post req. login (email/Pw)
   Server-->>Client: Send to Client
   Note over Server: Credentials correct && user exist? 'unique JWT created' : 'error message'
+  participant Client
+  participant Server
   Client->>Server: Send to Server
   Note over Client: JWT sparas: cookies || local storage
   Server-->>Client: Send to Client
   Note over Server: Newly created JWT sent back to client
+  participant Client
+  participant Server
   Client->>Server: Send to Server
   Note over Client: User logged in. Next app visit, sends JWT t oaccess protected route
   Server-->>Client: Send to Client
   Note over Server: Verification
+  participant Client
+  participant Server
   Client->>Server: Send to Server
   Note over Client: Access :) || Denied :(
   Server-->>Client: Send to Client
