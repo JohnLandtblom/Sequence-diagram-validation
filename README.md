@@ -1,8 +1,7 @@
 
 #Sequencediagram user access wiht JWT token
 ##Mermaid
-```
-mermaid
+``` mermaid
 sequenceDiagram
   participant Client
   participant Server
